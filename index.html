@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            min-height:100vh;
+            background-size: cover;
+            background-image:url("blue.jpg");
+        }
+        .parent-container{
+            background-color:rgb(120, 105, 105);
+            width:30%;
+            padding:2%;
+            text-align:center;
+            margin:auto;
+            margin-top:2%;
+            border-radius: 10px;
+
+        }
+       
+        .title{
+            color:red;
+        }
+        .form-field{
+            margin:10px
+        }
+       .form-field input,.form-btn{
+        padding:10px;
+        width:80%;
+        }
+        @media(max-width:430px){
+           .container{
+            flex-direction:column;
+           }
+           .parent-container{
+            width:80%;
+           }
+       }
+    
+
+       
+    </style>
+</head>
+<body>
+    
+    <form class="parent-container"action="login.html">
+     <h3 class="title">REGISTRATION FORM</h3>
+     <div class="form-field"><input type="text"  name="mail" required placeholder="Enter your name"/></div>
+     <div class="form-field"><input type="password"  name="password" required placeholder="Enter password"/></div>
+     <div class="form-field"><input type="password"  name="confirm_password" required placeholder="confirm password"/></div>
+     <div class="form-field"><input type="text"  name="number" required placeholder="Enter mobile number"/></div>
+    
+    <button class="form-btn">submit</button> 
+    <p>
+        Already have an account
+        <a href="login.html">login</a>
+    </p>
+    </form>
+</body>
+</html>
